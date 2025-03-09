@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=lexend"/>
+    <title>Links website</title>
+    <style>
+      body {
+        background-image: url(https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80); /* The image used for background*/
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-position: center; /* Center the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        font-family: "lexend", sans-serif;
+      }
+
+      .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .image-container {
+        text-align: center;
+        width: 100%;
+      }
+
+      .links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .link {
+        min-width: 50% !important;
+      }
+
+      @media (min-width: 1200px) {
+        .container {
+          max-width: 1140px;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          max-width: 960px;
+        }
+      }
+      @media (min-width: 768px) {
+        .container {
+          max-width: 720px;
+        }
+
+        .link {
+          width: 100%;
+        }
+      }
+      @media (min-width: 576px) {
+        .container {
+          max-width: 540px;
+        }
+      }
+
+      .w3-yellow,
+      .w3-hover-purple:hover,
+      .w3-text-black {
+        color: rgb(0, 204, 255, 1) !important;
+        background-color: rgba(32, 18, 77, 0.7) !important;
+      }
+    </style>
+  </head>
+
+  <body class="w3-white">
+    <!-- Content container -->
+    <div class="container">
+      <!-- Image and name container. Change to your picture here. -->
+      <div class="image-container">
+        <img
+          src="./images/TomHeadshot23.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
+          class="w3-margin"
+          alt="A photo of TeaKayB smiling"
+          max-width="100%"
+          height="150px"
+          style="border-radius: 50%"
+        />
+
+        <!-- Content. Add bio. -->
+        <div class="w3-text-white">
+          <p class="w3-large"><strong>TeaKayB's Mathsy Space</strong></p>
+        </div>
+
+        <!-- Links section 1. Replace the # inside of the "" with your links. -->
+        <div class="w3-text-white">
+          <p class="w3-medium"><strong>Get in touch via...</strong></p>
+        </div>
+        <div class="links-container">
+          <a href="https://mathstodon.xyz/@TeaKayB" class="w3-button w3-hover-purple w3-medium w3-round-medium w3-deep-purple link" target="_blank">the Fediverse</a>
+          <a href="https://bsky.app/profile/teakayb.mathsy.space" class="w3-button w3-hover-purple w3-medium w3-round-medium w3-deep-purple link" target="_blank">BlueSky</a>
+          <a href="https://www.linkedin.com/in/tkbriggs/" class="w3-button w3-hover-purple w3-medium w3-round-medium w3-deep-purple link" target="_blank">LinkedIn</a>
+          <a href="https://tkbriggs.co.uk/contact/" class="w3-button w3-hover-purple w3-medium w3-round-medium w3-deep-purple link" target="_blank">my website</a>
+        </div>
+        <!-- Links section 2. Replace the # inside of the "" with your links. -->
+        <div class="w3-text-white">
+          <p class="w3-medium"><strong>Examples of my work:</strong></p>
+        </div>
+        <div class="links-container">
+          <a href="https://tkbriggs.co.uk/tags/mathscomm/" class="w3-button w3-hover-purple w3-medium w3-round-medium w3-deep-purple link" target="_blank">Maths Communication</a>
+          <a href="https://tkbriggs.co.uk/tags/resourcedevelopment/" class="w3-button w3-hover-purple w3-medium w3-round-medium w3-deep-purple link" target="_blank">Resource Development</a>
+          <a href="https://tkbriggs.co.uk/tags/researchproject/" class="w3-button w3-hover-purple w3-medium w3-round-medium w3-deep-purple link" target="_blank">Research</a>
+        </div>
+        
+        <!-- Links section 2. Replace the # inside of the "" with your links. -->
+        <div class="w3-text-white">
+          <p class="w3-medium"><strong>Examples of my writing:</strong></p>
+        </div>
+        <div class="links-container">
+          <a href="https://orcid.org/0009-0008-4910-5467" class="w3-button w3-hover-purple w3-medium w3-round-medium w3-deep-purple link" target="_blank">My ORCiD</a>
+          <a href="https://tkbriggs.co.uk/tags/writing/" class="w3-button w3-hover-purple w3-medium w3-round-medium w3-deep-purple link" target="_blank">Writing Portfolio</a>
+          <a href="https://tommaths.blogspot.com/" class="w3-button w3-hover-purple w3-medium w3-round-medium w3-deep-purple link" target="_blank">Personal Blog</a>
+          <a href="https://blogstronomy.blogspot.com/" class="w3-button w3-hover-purple w3-medium w3-round-medium w3-deep-purple link" target="_blank">Astronomy Blog</a>
+        </div>
+
+        
+      </div>
+    </div>
+
+      <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+      <footer class="w3-container w3-center w3-padding-48 w3-margin-top">
+        <a class="w3-margin-bottom" href="https://www.w3schools.com/spaces" title="This website was made with W3schools Spaces. Make your own free website today!" target="_blank">
+          <img style="filter: brightness(0) invert(1);" src="https://spaces.w3schools.com/logo_4x.png" width="50" height="50">
+        </a> 
+      <!-- End footer -->
+      </footer>
+    </div>
+  </body>
+</html>
