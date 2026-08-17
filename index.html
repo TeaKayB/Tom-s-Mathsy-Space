@@ -53,19 +53,30 @@
         min-height: 100vh;
       }
 
-      .container {
+            .container {
         width: 100%;
-        max-width: 580px;
+        max-width: 540px; /* Perfectly optimized width for neat link trees */
         margin: 0 auto;
         padding: 4rem 1.25rem;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Locks the center line for all children */
+      }
+
+      header, main, section, .links-group {
+        width: 100%; /* Forces identical boundaries for perfect edge alignment */
       }
 
       header {
-        margin-bottom: 3rem;
+        margin-bottom: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       .avatar {
+        display: block;
+        margin: 0 auto;
         border: 3px solid var(--purple-border);
         box-shadow: 0 0 30px rgba(144, 95, 255, 0.5);
         transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -79,12 +90,12 @@
         font-size: 2rem;
         font-weight: 800;
         letter-spacing: -0.025em;
-        margin: 1.25rem 0;
-        color: var(--text-bright);
+        margin: 1.5rem 0 0 0;
+        text-align: center;
         text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
       }
 
-      /* Integrated Cosmic Sub-headers */
+      /* Bulletproof Centered Cosmic Sub-headers */
       h2 {
         font-size: 1.15rem;
         font-weight: 700;
@@ -95,10 +106,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 12px;
+        text-align: center;
+        gap: 16px;
+        width: 100%;
       }
 
-      /* Constellation framing line accents */
+      /* Constellation framing lines - now calculating identical sizes left and right */
       h2::before, h2::after {
         content: '';
         flex: 1;
@@ -112,8 +125,10 @@
       .support-text {
         font-size: 1.05rem;
         color: var(--text-subtle);
+        width: 100%;
         max-width: 460px;
         margin: 0 auto 1.5rem auto;
+        text-align: center;
         line-height: 1.6;
         text-shadow: 0 2px 8px rgba(0,0,0,0.8);
       }
@@ -123,6 +138,7 @@
         flex-direction: column;
         gap: 1.1rem;
       }
+
 
       /* Modern Deep Cosmic Buttons */
       .tree-button {
