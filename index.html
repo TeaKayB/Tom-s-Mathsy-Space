@@ -191,6 +191,14 @@
       footer:hover {
         opacity: 1;
       }
+
+            /* Fades the nebula thumbnail into the background at the edges */
+      footer img {
+        display: inline-block;
+        mask-image: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+        -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+      }
+
       
     </style>
     <meta name="google-site-verification" content="qO1KL4WWVsHO-dtCfgwX527mHT4_CLYlGzTtAt1YHoc" />
