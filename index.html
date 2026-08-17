@@ -35,8 +35,14 @@
         --text-subtle: #e2e8f0;
       }
 
+      /* MUST ADD: Universal box-sizing engine to fix padding spillovers */
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
       body {
-        /* Pure CSS Starfield Layering: Even if the Unsplash image fails to load, this draws a beautiful space field */
         background-color: #0b071e;
         background-image: 
           radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 4px),
@@ -45,7 +51,7 @@
           linear-gradient(rgba(11, 7, 30, 0.4), rgba(11, 7, 30, 0.4)),
           url(https://unsplash.com);
         background-size: 550px 550px, 350px 350px, 250px 250px, cover, cover;
-        background-position: 0 0, 40px 60px, 130px 270px, center, center;
+        background-position: center;
         background-repeat: repeat, repeat, repeat, no-repeat, no-repeat;
         background-attachment: fixed;
         font-family: "lexend", sans-serif;
@@ -53,18 +59,18 @@
         min-height: 100vh;
       }
 
-            .container {
+      .container {
         width: 100%;
-        max-width: 540px; /* Perfectly optimized width for neat link trees */
+        max-width: 480px; /* Snugger profile keeps buttons looking incredibly crisp */
         margin: 0 auto;
-        padding: 4rem 1.25rem;
+        padding: 3.5rem 1.25rem;
         display: flex;
         flex-direction: column;
-        align-items: center; /* Locks the center line for all children */
+        align-items: center;
       }
 
       header, main, section, .links-group {
-        width: 100%; /* Forces identical boundaries for perfect edge alignment */
+        width: 100%;
       }
 
       header {
